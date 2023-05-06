@@ -1,0 +1,467 @@
+:root {
+    --navbar-top1: #000000;
+    --navbar-top2: #ffffff;
+    --navbar-bottom: #b5b7b7;
+    --content-background: #48494A;
+    --button1: #fade4b;
+    --background-color: #7b1516;
+}
+
+body {
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_v2_96b6d74a.jpeg?region=0%2C0%2C2048%2C1600);
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav.navbar {
+    background-color: var(--navbar-top1) !important;
+}
+
+nav.navbar .container-fluid ul {
+    margin-left: 100px;
+}
+
+
+nav.navbar .container-fluid .top-ul li:last-child {
+    margin-left: 10px;
+}
+
+nav.navbar .container-fluid .top-ul li:last-child::before {
+    content: "|";
+    color: var(--content-background) !important;
+    margin-right: 20px;
+}
+
+nav.navbar .container-fluid ul a {
+    color: var(--navbar-top2) !important;
+}
+
+nav.navbar .container-fluid .logo img {
+    width: 180px;
+}
+
+nav.navbar .container-fluid .logo-small img {
+    width: 250px;
+    max-width: 0 auto;
+}
+
+nav.navbar .container-fluid .navbar-toggler {
+    border: none !important;
+    position: absolute;
+}
+
+nav.navbar .container-fluid .offcanvas {
+    background-color: var(--navbar-top1) !important;
+}
+
+nav.navbar .container-fluid .offcanvas ul li a {
+    color: var(--navbar-bottom) !important;
+}
+
+nav.navbar .container-fluid .offcanvas ul li a:hover {
+    color: var(--navbar-top2) !important;
+}
+
+nav.navbar .container-fluid .offcanvas-header button img {
+    color: var(--navbar-top2) !important;
+}
+
+nav.navbar .container-fluid .offcanvas-body > span {
+    cursor: pointer;
+}
+
+nav.navbar .container-fluid .offcanvas-body > span a i{
+    color: var(--navbar-top2) !important;
+}
+
+nav.navbar .container-fluid .search {
+    margin-right: 100px;
+    word-spacing: 5px;
+}
+
+nav.navbar .container-fluid .search span,
+nav.navbar .container-fluid .search span a {
+    color: var(--navbar-top2) !important;
+    cursor: pointer;
+}
+
+nav.navbar .container-fluid .search-small span a {
+    color: var(--navbar-top2) !important;
+}
+
+/* .container-fluid.bottom {
+    position: absolute;
+    top: 125px;
+    text-align: center !important;
+    background-color: var(--navbar-top1) !important;
+    border-bottom: 0.5px solid var(--navbar-bottom);
+} */
+
+.container-fluid.bottom {
+    width: 100%;
+    background-color: var(--navbar-top1) !important;
+    margin: 0;
+    padding-top: 20px;
+    border-bottom: 0.5px solid var(--navbar-bottom);
+}
+
+.container-fluid.bottom ul li a {
+    text-decoration: none;
+    color: var(--navbar-bottom) !important;
+}
+
+.container-fluid.bottom ul li a:hover {
+    color: var(--navbar-top2) !important;
+}
+
+/* .container .about {
+    position: absolute;
+    top: 180px;
+} */
+
+.container .about a {
+    color: var(--navbar-top2) !important;
+}
+
+.title {
+    margin-top: 10px;
+}
+
+.title .about a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.carousel-caption.first-caption {
+    position: absolute;
+    top: 0;
+    left: -500px;
+}
+
+@media screen and (max-width: 1200px) {
+    .carousel-caption.first-caption {
+        position: absolute;
+        left: 100px
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-caption.first-caption {
+        display: block !important;
+        position: relative;
+        left: 5px;
+    }
+}
+
+.carousel-caption p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carousel-caption button {
+    margin: 10px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.carousel-caption button.read-more {
+    font-weight: bold;
+    background-color: var(--button1);
+}
+
+.carousel-caption button.explore {
+    font-weight: bold;
+    background-color: var(--navbar-top1);
+    border: 1px solid var(--button1);
+}
+
+.carousel-caption button.explore:hover {
+    border: 1px solid var(--navbar-top2);
+} 
+
+.carousel-caption.second-caption {
+    position: absolute;
+    top: 30px;
+    right: -450px;
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-caption.second-caption {
+        display: block !important;
+        position: relative;
+        left: 5px;
+    }
+}
+
+/* .carousel-container .carousel-control-prev {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+ 
+.carousel-container .carousel-control-prev-icon {
+    width: 0 !important;
+}
+ */
+.carousel-caption.third-caption {
+    position: absolute;
+    top: 70px;
+    right: -350px;
+}
+
+.carousel-caption.third-caption h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-caption.third-caption {
+        display: block !important;
+        position: relative;
+        left: 5px;
+        margin-bottom: 70px;
+    }
+}
+
+
+
+.dropdown button {
+    margin-bottom: 15px;
+    padding: 0;
+    color: var(--navbar-bottom);
+    font-weight: bold;
+}
+
+.container-fluid.vision {
+    position: relative;
+}
+
+.vision-logo {
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+@media screen and (max-width: 690px) {
+    .vision-logo {
+        position: relative;
+        background-color: var(--background-color);
+        left: 0;
+        top: 0;
+        padding-bottom: 15px;
+    }
+
+    .vision-logo img {
+        width: 200px;
+    }
+
+    .cards {
+        margin-top: 20px;
+    }
+}
+
+.vision-logo button {
+    padding: 10px 60px;
+    background-color: var(--button1);
+    font-weight: bold;
+    color: var(--navbar-top1);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+@media screen and (min-width: 576px) {
+    .cards {
+        background-image: url('https://lumiere-a.akamaihd.net/v1/images/visions-s2-sith-tentpole-hero-desktop-gumstick_13368852.jpeg?region=0%2C0%2C1600%2C375');
+        background-position: top left;
+        background-size: cover;
+        /* height: 400px; */
+        padding-bottom: 30px;
+    }
+}
+
+.first-card {
+    padding-bottom: 24px;
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-card {
+        margin: 0 47px;
+    }
+
+    .carousel-card .carousel-item {
+        padding: 30px 130px;
+        background-color: var(--background-color);
+    }
+
+    .vision-logo img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-card .carousel-item {
+        padding: 0;
+        background: none;
+    }
+
+    .carousel-card .carousel-item .card {
+        width: 17rem !important;
+        margin-left: 12px;
+    } 
+}
+
+.line-div {
+    margin: 30px 150px;
+    position: relative;
+}
+
+@media screen and (max-width: 576px) {
+    .line-div {
+        margin: 15px 5px;
+    }
+
+    .line-div .line-title,
+    .line-div .line-title h4 {
+        font-size: 1rem;
+    }
+}
+
+.line-div .line-title h4 {
+    text-align: left;
+    color: var(--navbar-top2);
+    font-weight: bold;    
+}
+
+
+.line-div .line {
+    border-bottom: 2px solid var(--content-background);
+}
+
+.lates-news .card {
+    border: none;
+}
+
+.carousel-three-card .card {
+    border: none;
+}
+
+.carousel-three-card .card img {
+    overflow: hidden;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+
+/* .three-carousel {
+    padding-left: 160px;
+} */
+
+.three-carousel .card {
+    border: none;
+    /* width: 25rem; */
+}
+
+.line-div .line-title > .view-all a {
+    color: var(--navbar-top2);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.line-div .line-title > .view-all a::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url('https://static-mh.content.disney.io/matterhorn/assets/starwars/icons/view_all_icon-ddd4c2e76fa3.svg');
+    background-size: 9px;
+    background-repeat: no-repeat;
+    background-position: 10px 3px;
+}
+
+footer {
+    background-color: var(--navbar-top1);
+}
+
+.more-sw-span {
+    margin-bottom: 15px;
+}
+
+.more-sw-span span {
+    color: var(--navbar-top2);
+    font-size: 0.9rem;
+}
+
+.footer-ul li a {
+    color: var(--navbar-top2) !important;
+}
+
+.three-carousel .card-body {
+    padding: 10px;
+    height: 90px;
+    text-align: center;
+}
+
+.bottom-footer {
+    margin-bottom: 40px;
+}
+
+.bottom-footer span {
+    color: var(--navbar-top2);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.bottom-footer ul li a {
+    color: var(--navbar-top2) !important;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+    .bottom-footer ul li a::after {
+        content: "|";
+        margin-left: 10px;
+    }
+}
+
+
+.three-carousel .card-body-second {
+    height: 50px;
+}
+
+.three-carousel .card-body-second-2 {
+    height: 66px;
+}
+
+.bottom-footer ul li .content-none::after {
+    content: "";
+}
+
+@media screen and (max-width: 1366px) {
+    .bottom-footer ul li a::after {
+        content: "";
+    }
+}
